@@ -1,0 +1,426 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    font-family: "Opens Sans", sans-serif;
+}
+main {
+    font-family: "Merriweather" , sans-serif;
+}
+body {
+    background-color: #fcfafa;
+}
+.text {
+    color: #2D0905;
+    opacity: 85%;
+}
+.image-div {
+    background-image: url('/main-pic.webp');
+    background-size: cover;
+    position: relative;
+    background-position: -200px center;
+    z-index: 100;
+
+}
+
+.armenian-img {
+    background-image: url('/1.png');
+    position: absolute;
+    right: 0;
+    top: 300px;
+    width: 1400px;
+    line-height: 80px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.armenian-img h1 {
+    position: absolute;
+    right: 220px;
+    font-family: "Merriweather";
+    
+}
+.meat-city {
+    position: absolute;
+    right: 290px;
+    top: 600px;
+    @apply text-4xl;   
+}
+
+.meat-city  h3 {
+    font-family: "Merriweather" 
+}
+
+.dishes-btn {
+    position: absolute;
+    right: 290px;
+    top:700px;
+  
+}
+.btn-dish {
+   
+    border: 2px solid white;
+    @apply rounded-s-xl p-6;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Merriweather" 
+}
+.breakfast-img {
+    background-image: url('/breakfast-f.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+}
+.container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    @apply mt-[800px];
+    
+}
+.aperitiv-png {
+    background-image: url('aperitiv.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+}
+.caucas-img {
+    background-image: url('caucasian.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.cold-dish {
+    background-image: url('cold-zakus.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.first-courses {
+    background-image: url('first.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.salad {
+    background-image: url('salata.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.pasta {
+    background-image: url('pasta.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.main-dish {
+    background-image: url('main.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.garnish {
+    background-image: url('garn.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.fish {
+    background-image: url('fish.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.grilled-dish {
+    background-image: url('grill.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.desserts {
+    background-image: url('dessert.png');
+    @apply h-[600px] w-[400px];
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.hero {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.product img {
+    @apply rounded-lg h-[280px] w-[450px];
+}
+.product {
+    @apply mb-8 mt-3 w-[400px] h-[600px] gap-4;
+}
+.breakfast {
+    color: #6B5A5A;
+    font-family: 'Merriweather', serif;
+}
+.info-order input {
+    @apply w-[110px] h-[32px] rounded-md p-4;
+    border: 1px solid black;
+ }
+
+
+.btn-order {
+    color: white;
+    background-color: #350400;
+    @apply rounded-md w-[70px] h-[32px];   
+    padding: auto;   
+ }
+ .name-product {
+    @apply text-3xl mt-4 mb-2 font-thin;
+    opacity: 90%;
+    color: #333333;
+    line-height: 1.1;
+    font-family: 'Merriweather', serif;
+    width: 400px;
+ }
+ .quant-prod {
+    @apply opacity-25;
+ }
+ .price-prod {
+    color: #FFB54A;
+    @apply mt-4 text-xl;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    align-items: center;
+
+ }
+ .ingred-prod {
+    font-family: 'Merriweather', serif;
+    width: 400px;
+    display: flex;
+    align-items: center;
+ }
+
+ .input-wrapper {
+    position: relative;
+    display: inline-block;
+    
+  }
+  .add-btns {
+    position: absolute;
+    left: 10px;
+    top: 4px;
+  }
+  .minus-btns {
+     position: absolute;
+     right: 10px;
+     top: 4px;
+}
+
+  .input-wrapper {
+    margin-right: -20px;
+  }
+
+  input[type="number"] {
+    width: 80px; 
+    padding: 5px 30px 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+.drinks-text {
+    color: #6B5A5A;
+    font-family: 'Merriweather', serif;
+    @apply text-6xl;
+}
+.coca-cola , .volume {
+    @apply mt-2 text-2xl font-thin opacity-75;
+    font-family: 'Merriweather', serif;
+
+}
+.volume {
+    opacity: 15%;
+    font-family: 'Merriweather', serif;
+    @apply text-lg; 
+    margin-bottom: 10px;
+}
+.price-drink {
+    color: #FFB54A;
+    @apply mt-4 text-xl;
+    font-family: 'Merriweather', serif;
+    margin-left: 10px;
+    margin-bottom: 13px;
+}
+.btn-order-drink {
+    color: white;
+    background-color: #350400;
+    @apply rounded-md w-[80px] h-[40px];   
+    padding: auto;  
+}
+.input-drink {
+    @apply rounded-md w-[80px] h-[40px]; 
+}
+.footer {
+    background-color: #fcf9f9;
+    position: relative;
+}
+.text-footer {
+    color: #838383;
+    @apply mt-8 mb-2;
+    
+   
+}
+.text-contacts {
+    color: #838383;
+}
+
+.text-contacts p {
+    line-height: 32px;
+    
+}
+
+.text-support p {
+    color: #838383;
+    line-height: 32px;
+}
+.text-support h2 {
+    color: #6B5A5A;
+    @apply text-2xl;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 8px;
+    
+}
+.menu-text-footer {
+    color: #6B5A5A;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 8px;
+}
+.rights-reserved {
+   position: absolute;
+   top: 350px;
+}
+.our-projects {
+    color: #6B5A5A;
+    @apply text-2xl;
+    font-family: 'Merriweather', serif;
+}
+
+.map {
+    position: relative;
+}
+.pop-up-contacts {
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    background-color: white;
+    @apply rounded-lg w-[500px] h-[420px]
+    
+}
+.pop-up-first h2 {
+    color: #6B5A5A;
+    @apply text-3xl mb-7;
+    font-family: 'Merriweather', serif;
+}
+.pop-up-first h1 {
+    @apply text-2xl mb-1 font-light;
+}
+.pop-up-first p {
+    color: #838383;
+    @apply text-[14px] mb-10;
+}
+
+.pop-up-second h3 {
+    color: #838383;
+}
+.pop-up-second p {
+    color: #6B5A5A;
+    opacity: 80%;
+    @apply font-thin;
+}
+.pop-up-second {
+    margin-bottom: 20px;
+}
+.pop-up-third i {
+    color: #350400;
+    @apply text-2xl opacity-80;
+}
+.pop-up-third {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 140;
+    @apply w-[600px] h-screen;
+    box-shadow: -10px 0 15px rgba(0, 0, 0, 0.20);
+}
+.shop-div {
+    position: fixed;
+    top: 120px;
+    right: 90px;
+    z-index: 120;
+    @apply w-[80px] h-[80px];
+}
+.shopping-bag {
+    @apply w-[65px] h-[65px] p-4 font-thin;
+    background-color: #350400;
+    color: white;
+    border-radius: 100%;
+    border: 1px solid white;
+}
+.close-side {
+    position: absolute;
+    right: 0;
+    @apply p-4;
+}
+.close-side-i {
+    @apply w-[30px] h-[30px];
+}
+.sidebar-div hr {
+    border: 0.1px solid black;
+    opacity: 20%;
+}
+.sticky {
+    position: sticky;
+    top: 0;
+    @apply w-screen h-[60px] opacity-95 gap-6;
+    background-color: #fcfafa;
+    margin-bottom: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.sticky a {
+    color: #838383;
+    @apply text-[14px] ml-8;
+}
+.order-meal h2 {
+    position: absolute;
+    top: 150px;
+    right: 40px;
+}
+.productt input {
+    border: none;
+    @apply w-[50px];
+    padding-left: 10px;
+    padding-right: 10px;
+
+   
+}
+.productt button {
+    border: 1px solid black;
+    @apply rounded-3xl w-[30px] h-[30px];
+    padding: auto;
+}
+
